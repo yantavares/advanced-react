@@ -1,11 +1,7 @@
 import { useState } from "react";
 
 const people = [
-  {
-    name: "Yan",
-    age: 21,
-    hobby: "To sleep :(",
-  },
+  { name: "Yan", age: 21, hobby: "To sleep :(" },
   { name: "Gui", age: 25, hobby: "Programming on free time" },
   { name: "Biel", age: 20, hobby: "Playing Genshin" },
 ];
@@ -16,7 +12,7 @@ const UseStateObject = () => {
 
   const displayPerson = () => {
     setPerson(people[count]);
-    setCount(count + 1);
+    setCount(count === 2 ? 0 : count + 1);
 
     //? setPerson({ ...person, name:"gui" }); ---> Copia os atributos passados de person e da um overwrite na propriedade nome
   };
