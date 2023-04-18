@@ -4,15 +4,18 @@ const people = [
   { name: "Yan", age: 21, hobby: "To sleep :(" },
   { name: "Gui", age: 25, hobby: "Programming on free time" },
   { name: "Biel", age: 20, hobby: "Playing Genshin" },
+  { name: "Dri", age: 3, hobby: "watch dorama" },
+  { name: "Tai", age: 2, hobby: "read nojera" },
 ];
 
 const UseStateObject = () => {
+  const l = people.length - 1;
   const [person, setPerson] = useState(people[0]);
   const [count, setCount] = useState(1);
 
   const displayPerson = () => {
     setPerson(people[count]);
-    setCount(count === 2 ? 0 : count + 1);
+    setCount(count === l ? 0 : count + 1);
 
     //? setPerson({ ...person, name:"gui" }); ---> Copia os atributos passados de person e da um overwrite na propriedade nome
   };
