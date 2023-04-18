@@ -6,6 +6,7 @@ const people = [
   { name: "Biel", age: 20, hobby: "Playing Genshin" },
   { name: "Dri", age: 3, hobby: "watch dorama" },
   { name: "Tai", age: 2, hobby: "read nojera" },
+  { name: "Helo", age: -2, hobby: "read nojera as well" },
 ];
 
 const UseStateObject = () => {
